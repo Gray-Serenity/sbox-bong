@@ -1,0 +1,361 @@
+{
+  "GameObjects": [
+    {
+      "Id": "ee1ae708-5708-4262-9290-242d1d0e01c8",
+      "Name": "Sun",
+      "Position": "-1100.365,182.575,605.3276",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "DirectionalLight",
+          "__enabled": true,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0.05882,0.07451,0.08235,1"
+        }
+      ]
+    },
+    {
+      "Id": "257c0fbb-3f37-4e21-826f-fedc42ae69cf",
+      "Name": "Main Camera",
+      "Position": "-300,0,50",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "CameraComponent",
+          "__enabled": true,
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": true,
+          "OrthographicHeight": 1300,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "Id": "f2bcaf6e-0d54-485d-8412-94f7e801b99a",
+      "Name": "Game Manger",
+      "Position": "0,0,100",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "GameManger",
+          "__enabled": true,
+          "BallPrefab": "prefabs/ball.prefab",
+          "ScoreLimit": 999
+        }
+      ]
+    },
+    {
+      "Id": "70440fd3-838a-4212-a971-1a5d0749f7d8",
+      "Name": "board",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Board",
+          "__enabled": true,
+          "Bottom": "fb1e1958-1266-457d-9c78-9d6e195f62ad",
+          "Left": "6a54034d-1468-46fb-991e-fde92eeae822",
+          "PaddleLeft": "52c39ad5-479f-4fdf-8da2-1e9421c04d9e",
+          "PaddleRight": "c819a0cf-41c4-42f1-91bb-964ec96f4f44",
+          "Right": "ea957969-54bf-49d6-8337-c26567ff9461",
+          "ScoreLeft": "3c3a2304-4ae6-4b15-9412-aa11000a70c1",
+          "ScoreRight": "60f3a774-3760-4a3a-84dc-f5beee3073af",
+          "Timer": "250b850a-3669-417c-994b-c8a658cf0b88",
+          "Top": "16245bda-084a-4d7f-b273-87c7a55d6614"
+        }
+      ],
+      "Children": [
+        {
+          "Id": "fb1e1958-1266-457d-9c78-9d6e195f62ad",
+          "Name": "bottom",
+          "Position": "0,0,-525",
+          "Scale": "1,41,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "16245bda-084a-4d7f-b273-87c7a55d6614",
+          "Name": "top",
+          "Position": "0,0,525",
+          "Scale": "1,41,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "ea957969-54bf-49d6-8337-c26567ff9461",
+          "Name": "right",
+          "Position": "0,-1000,0",
+          "Scale": "1,1,20",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "6a54034d-1468-46fb-991e-fde92eeae822",
+          "Name": "left",
+          "Position": "0,1000,0",
+          "Scale": "1,1,20",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "52c39ad5-479f-4fdf-8da2-1e9421c04d9e",
+          "Name": "Controller Left",
+          "Position": "1,945,0",
+          "Scale": "1,0.2,3",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0,0.34,1,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "50,50,51",
+              "Static": false,
+              "Surface": null
+            },
+            {
+              "__type": "Controller",
+              "__enabled": true,
+              "Player": true,
+              "Speed": 1000
+            }
+          ]
+        },
+        {
+          "Id": "c819a0cf-41c4-42f1-91bb-964ec96f4f44",
+          "Name": "Controller Right",
+          "Position": "1,-945,0",
+          "Scale": "1,0.2,3",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.78431,0,0,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "50,50,51",
+              "Static": false,
+              "Surface": null
+            },
+            {
+              "__type": "Controller",
+              "__enabled": true,
+              "Player": false,
+              "Speed": 1000
+            }
+          ]
+        },
+        {
+          "Id": "3c3a2304-4ae6-4b15-9412-aa11000a70c1",
+          "Name": "Score Left",
+          "Position": "0,900,625",
+          "Rotation": "-0,0,-1,-0.0000006397578",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "WorldPanel",
+              "__enabled": true,
+              "HorizontalAlign": "Center",
+              "LookAtCamera": false,
+              "PanelSize": "3000,3000",
+              "RenderScale": 1,
+              "VerticalAlign": "Center"
+            },
+            {
+              "__type": "Score",
+              "__enabled": true,
+              "Game": "f2bcaf6e-0d54-485d-8412-94f7e801b99a",
+              "Team": 0
+            }
+          ]
+        },
+        {
+          "Id": "60f3a774-3760-4a3a-84dc-f5beee3073af",
+          "Name": "Score Right",
+          "Position": "0,-900,625",
+          "Rotation": "-0,0,-1,-0.0000006397578",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "WorldPanel",
+              "__enabled": true,
+              "HorizontalAlign": "Center",
+              "LookAtCamera": false,
+              "PanelSize": "3000,3000",
+              "RenderScale": 1,
+              "VerticalAlign": "Center"
+            },
+            {
+              "__type": "Score",
+              "__enabled": true,
+              "Game": "f2bcaf6e-0d54-485d-8412-94f7e801b99a",
+              "Team": 1
+            }
+          ]
+        },
+        {
+          "Id": "250b850a-3669-417c-994b-c8a658cf0b88",
+          "Name": "Timer",
+          "Position": "0,0,625",
+          "Rotation": "-0,0,-1,-0.0000006397578",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "WorldPanel",
+              "__enabled": true,
+              "HorizontalAlign": "Center",
+              "LookAtCamera": false,
+              "PanelSize": "9000,3000",
+              "RenderScale": 1,
+              "VerticalAlign": "Center"
+            },
+            {
+              "__type": "Timer",
+              "__enabled": true,
+              "Game": "f2bcaf6e-0d54-485d-8412-94f7e801b99a"
+            }
+          ]
+        },
+        {
+          "Id": "02778902-8620-44d6-9a3f-8ce5f0220491",
+          "Name": "middle",
+          "Scale": "1,0.05,20",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true
+  },
+  "Title": "main",
+  "Description": "",
+  "__references": []
+}

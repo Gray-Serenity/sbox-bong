@@ -1,0 +1,37 @@
+menu {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	font-size: 100px;
+	font-family: Poppins;
+	color: #FFFFFF;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	pointer-events: all;
+
+	.title {
+		top: -200px;
+		font-weight: 500;
+		font-size: 300px;
+	}
+
+	.author {
+		top: -300px;
+		font-size: 100px;
+		font-weight: 200;
+	}
+
+	.top {
+		gap: 100px;
+		top: -100px;
+		font-weight: 500;
+	}
+
+	.bottom {
+		font-weight: 500;
+		column-gap: 100px;
+	}
+}

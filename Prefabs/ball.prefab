@@ -1,0 +1,38 @@
+{
+  "RootObject": {
+    "Id": "3348d111-7305-423c-80c1-d0ee29d924f7",
+    "Name": "ball",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "ModelRenderer",
+        "__enabled": true,
+        "BodyGroups": 18446744073709551615,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/dev/box.vmdl",
+        "RenderType": "On",
+        "Tint": "1,0.58,0,1"
+      },
+      {
+        "__type": "BoxCollider",
+        "__enabled": true,
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Scale": "55,50,55",
+        "Static": false,
+        "Surface": null
+      },
+      {
+        "__type": "Ball",
+        "__enabled": true,
+        "BallSpeed": 700,
+        "SpeedIncrease": 1.2
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

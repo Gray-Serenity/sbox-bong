@@ -1,0 +1,77 @@
+{
+  "GameObjects": [
+    {
+      "Id": "7eb9d313-3e07-41b2-8b34-e36b61efae7b",
+      "Name": "Menu",
+      "Rotation": "0,0,1,-0.0000006397578",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "WorldPanel",
+          "__enabled": true,
+          "HorizontalAlign": "Center",
+          "LookAtCamera": false,
+          "PanelSize": "1500,1500",
+          "RenderScale": 1,
+          "VerticalAlign": "Center"
+        },
+        {
+          "__type": "menu",
+          "__enabled": true
+        }
+      ]
+    },
+    {
+      "Id": "4995d2ea-bb29-4e77-8741-1c243d141533",
+      "Name": "Main Camera",
+      "Position": "-50,0,0",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "CameraComponent",
+          "__enabled": true,
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": true,
+          "OrthographicHeight": 100,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "Id": "56e1a17c-211e-42b7-b990-aa00243016f3",
+      "Name": "Sun",
+      "Position": "-1100.365,182.575,605.3276",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "DirectionalLight",
+          "__enabled": true,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": false,
+          "SkyColor": "0.05882,0.07451,0.08235,1"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true
+  },
+  "Title": "menu",
+  "Description": "",
+  "__references": []
+}

@@ -1,0 +1,32 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+    <div class="item">
+        <p>@GetScore()</p>
+    </div>
+</root>
+
+@code
+{
+    [Property] public GameManger Game { get; set; }
+    [Property] public int Team { get; set; } = 0;
+
+    private int GameScore = 0;
+
+    string GetScore()
+    {
+        if(Team == 0)
+        {
+            GameScore = Game.ScoreLeft;
+        }else
+        {
+            GameScore = Game.ScoreRight;
+        }
+        return GameScore.ToString();
+        //Log.Info()
+    }
+
+    protected override int BuildHash() => System.HashCode.Combine(Game.ScoreLeft, Game.ScoreRight);
+}

@@ -1,0 +1,27 @@
+@using System;
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+    <div class="top">
+        <div class="btn" onclick=@(() => SinglePlayer())>Single Player</div>
+    </div>
+    <div class="bottom">
+        <div class="btn" onclick=@Quit>Quit</div>
+    </div>
+</root>
+
+@code
+{
+    void SinglePlayer()
+    {
+        Log.Info("Click");
+        GameManager.ActiveScene.LoadFromFile("/scenes/main.scene");
+    }
+
+    void Quit()
+    {
+        Game.Disconnect();
+    }
+}
